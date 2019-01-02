@@ -7,7 +7,7 @@
     Hint: The basic equation of a circle is x^2 + y^2 = r^2.
 """
 
-from random import random
-from math import pow
+from random import random as r
+from math import pow as p
 
-print(sum([4 if pow(random(), 2) + pow(random(), 2) < 1 else 0 for x in range(11000000)])/11000000)
+print(sum([4 if p(r(), 2) + p(r(), 2) < 1 else 0 for x in range(1e7)])/1e7)
